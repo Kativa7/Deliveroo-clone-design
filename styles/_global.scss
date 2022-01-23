@@ -1,21 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-  }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  font-family: "Montserrat", sans-serif;
+}
 
-  .jumbotron{
-      background-image: url(../images/background.svg);
-      min-height: 80vh;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
+.jumbotron {
+  background-image: url(../images/background.svg);
+  min-height: 80vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2{
+    font-size: $header2;
+}
