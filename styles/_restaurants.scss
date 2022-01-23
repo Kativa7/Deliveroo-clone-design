@@ -1,0 +1,24 @@
+.restaurants {
+  background: rgb(255, 234, 228);
+  min-height: 80vh;
+  h1 {
+    text-align: center;
+    padding: 4rem;
+  }
+}
+
+.cards {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .card {
+    padding: 2rem 1rem;
+    img {
+      width: 40rem;
+      height: 25rem;
+      object-fit: cover;
+    }
+  }
+}

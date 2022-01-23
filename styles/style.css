@@ -33,6 +33,10 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-size: 1.8rem;
+}
+
 p {
   font-size: 1.6rem;
 }
@@ -229,5 +233,39 @@ nav .nav-links button .menu-icon {
   font-size: 3rem;
   font-weight: 600;
   text-align: end;
+}
+
+.restaurants {
+  background: #ffeae4;
+  min-height: 80vh;
+}
+
+.restaurants h1 {
+  text-align: center;
+  padding: 4rem;
+}
+
+.cards {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards .card {
+  padding: 2rem 1rem;
+}
+
+.cards .card img {
+  width: 40rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
