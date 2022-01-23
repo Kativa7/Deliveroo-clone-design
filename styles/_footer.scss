@@ -1,0 +1,25 @@
+footer {
+  background: rgb(46, 51, 51);
+}
+
+.footer-wrap {
+  width: 70%;
+  min-height: 10vh;
+  margin: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 40rem;
+  }
+  p {
+    flex: 6 1 40rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
