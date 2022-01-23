@@ -19,14 +19,22 @@ button {
 
 .jumbotron {
   background-image: url(../images/background.svg);
-  min-height: 80vh;
+  min-height: 50vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
 h2 {
   font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 header {
@@ -106,5 +114,120 @@ nav .nav-links button img {
 
 nav .nav-links button .menu-icon {
   width: 20%;
+}
+
+.intro {
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+
+.intro-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro-info h1 {
+  font-weight: 600;
+  color: #440063;
+  margin-bottom: 4rem;
+  width: 80%;
+}
+
+.intro-info .search {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+  width: 80%;
+}
+
+.intro-info .search .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-info .search button {
+  cursor: pointer;
+  padding: 1.5rem;
+  border: none;
+  background: #00ccbc;
+  color: white;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.intro-info .search .input-btn {
+  width: 60%;
+  position: relative;
+}
+
+.intro-info .search .input-btn input {
+  padding: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 10px #888888;
+          box-shadow: 0px 0px 10px #888888;
+  margin: 1.5rem;
+  outline-color: #00ccbc;
+  width: 100%;
+}
+
+.intro-info .search .input-btn button {
+  position: absolute;
+  background: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  right: 5%;
+  top: 25%;
+}
+
+.intro-svg {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  position: relative;
+}
+
+.intro-svg img {
+  width: 100%;
+}
+
+.intro-svg .banner {
+  background: #007e8a;
+  padding: 4rem 5rem 2rem 5rem;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: end;
 }
 /*# sourceMappingURL=style.css.map */

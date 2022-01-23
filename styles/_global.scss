@@ -17,12 +17,20 @@ button {
 
 .jumbotron {
   background-image: url(../images/background.svg);
-  min-height: 80vh;
+  min-height: 50vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+h1{
+    font-size: $header1;
+}
+
 h2{
     font-size: $header2;
+}
+
+p{
+    font-size: $normal;
 }
