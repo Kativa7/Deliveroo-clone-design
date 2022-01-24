@@ -325,6 +325,7 @@ nav .nav-links button .cart-icon {
   text-decoration: none;
   font-size: 1.6rem;
   color: #00ccbc;
+  font-weight: 600;
 }
 
 .main-menu {
@@ -349,8 +350,13 @@ nav .nav-links button .cart-icon {
           flex: 2;
 }
 
+.main-menu .all-menu .meal-title h1 {
+  padding: 2.5rem 0rem;
+}
+
 .main-menu .all-menu .meal-title p {
   color: #575858;
+  padding-bottom: 1rem;
 }
 
 .main-menu .all-menu .menu-cards {
@@ -372,12 +378,13 @@ nav .nav-links button .cart-icon {
   display: -ms-flexbox;
   display: flex;
   width: 30%;
-  height: 12rem;
+  height: 14rem;
   margin-top: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 2rem;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(117, 117, 117, 0.46);
           box-shadow: 1px 1px 2px 1px rgba(117, 117, 117, 0.46);
+  cursor: pointer;
 }
 
 .main-menu .all-menu .menu-cards .card img {
@@ -392,8 +399,13 @@ nav .nav-links button .cart-icon {
   padding: 1rem;
 }
 
-.main-menu .all-menu .menu-cards .card .card-info p {
-  padding: 0.5rem 0rem;
+.main-menu .all-menu .menu-cards .card .card-info .cut-text {
+  width: 22rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin: 1rem 0rem;
 }
 
 .main-menu .your-order {
