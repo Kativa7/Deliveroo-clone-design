@@ -75,6 +75,7 @@ nav .logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
+  cursor: pointer;
 }
 
 nav .logo h2 {
@@ -106,9 +107,18 @@ nav .nav-links button {
   border: none;
   padding: 1rem 1rem;
   border-radius: 1rem;
-  text-align: center;
   font-size: 1.6rem;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 nav .nav-links button img {
@@ -118,6 +128,10 @@ nav .nav-links button img {
 
 nav .nav-links button .menu-icon {
   width: 20%;
+}
+
+nav .nav-links button .cart-icon {
+  width: 25%;
 }
 
 .intro {
@@ -233,6 +247,55 @@ nav .nav-links button .menu-icon {
   font-size: 3rem;
   font-weight: 600;
   text-align: end;
+}
+
+.second-head {
+  background: #00ccbc;
+  width: 100%;
+}
+
+.second-head nav {
+  width: 70%;
+  margin: auto;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 40vh;
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.top img {
+  height: 40rem;
+  width: 50rem;
+  padding: 2rem;
+  border-radius: 4rem;
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+}
+
+.rest-info {
+  margin: 2rem;
+  min-width: 25%;
+}
+
+.rest-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+}
+
+.rest-info h1 {
+  margin-bottom: 2rem;
 }
 
 .restaurants {

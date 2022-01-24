@@ -1,0 +1,37 @@
+.second-head {
+  background: $main-color-green;
+  width: 100%;
+  nav {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.top {
+  display: flex;
+  min-height: 40vh;
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+  img {
+    height: 40rem;
+    width: 50rem;
+    padding: 2rem;
+    border-radius: 4rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+  }
+}
+
+.rest-info {
+  margin: 2rem;
+  min-width: 25%;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: $normal;
+    padding: 0.5rem;
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
