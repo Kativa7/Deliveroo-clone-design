@@ -30,6 +30,7 @@
     justify-content: space-between;
     font-size: $normal;
     padding: 0.5rem;
+    color: $grey-color;
   }
   h1 {
     margin-bottom: 2rem;
@@ -37,11 +38,11 @@
 }
 
 .menu-preview {
-
   min-height: 8vh;
   width: 100%;
   margin: 1rem auto;
-  box-shadow: 0px 5px 0px rgba(196, 186, 186, 0.3), 0px -5px 0px rgba(196, 186, 186 0.1);
+  box-shadow: 0px 5px 0px rgba(196, 186, 186, 0.3),
+    0px -5px 0px rgba(196, 186, 186, 0.1);
 
   ul {
     display: flex;
@@ -51,9 +52,56 @@
     padding: 2.5rem 1rem;
     width: 50%;
   }
-  a{
-      text-decoration: none;
-      font-size: $normal;
-      color: $main-color-green;
+  a {
+    text-decoration: none;
+    font-size: $normal;
+    color: $main-color-green;
   }
+}
+
+.main-menu{
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .all-menu{
+        flex: 2;
+        .meal-title{
+            p{
+                color: $grey-color;
+            }
+        }
+        .menu-cards{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            .card{
+                display: flex;
+                width: 30%;
+                height: 12rem;
+                margin-top: 2rem;
+                border: 1px solid rgba(255, 255, 255, 0.8);
+                border-radius: 2rem;
+                box-shadow: 1px 1px 2px 1px rgba(117,117,117,0.46);
+                img{
+                    width: 10rem;
+                    height: 10rem;
+                    object-fit: cover;
+                    padding: 1rem; 
+                }
+                .card-info{
+                    padding: 1rem;
+                    p{
+                        padding: 0.5rem 0rem;
+                    }
+                }
+            }
+        }
+    }
+    .your-order{
+        flex: 1;   
+    }
 }
