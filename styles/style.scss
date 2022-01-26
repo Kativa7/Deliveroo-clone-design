@@ -3,6 +3,7 @@ $header2: 2rem;
 $header3: 1.8rem;
 $normal: 1.6rem;
 $main-color-green: rgb(0, 204, 188);
+$main-color-light: rgb(208,235,153);
 $grey-color: rgb(87, 88, 88);
 
 @import "global";
@@ -10,4 +11,5 @@ $grey-color: rgb(87, 88, 88);
 @import "intro";
 @import "restaurant";
 @import "restaurants";
+@import "login";
 @import "footer";

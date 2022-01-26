@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,6 +16,14 @@ body {
 
 button {
   font-family: "Montserrat", sans-serif;
+}
+
+button:hover {
+  border: 2px solid #d0eb99;
+}
+
+a {
+  text-decoration: none;
 }
 
 .jumbotron {
@@ -132,6 +141,10 @@ nav .nav-links button .menu-icon {
 
 nav .nav-links button .cart-icon {
   width: 25%;
+}
+
+nav .nav-links button:hover {
+  border: 2px solid #d0eb99;
 }
 
 .intro {
@@ -342,12 +355,13 @@ nav .nav-links button .cart-icon {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
 .main-menu .all-menu {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 
 .main-menu .all-menu .meal-title h1 {
@@ -408,10 +422,53 @@ nav .nav-links button .cart-icon {
   margin: 1rem 0rem;
 }
 
-.main-menu .your-order {
+.main-menu aside {
+  margin-left: 5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+}
+
+.main-menu aside .your-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  margin: 2rem;
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(117, 117, 117, 0.46);
+          box-shadow: 1px 1px 2px 1px rgba(117, 117, 117, 0.46);
+}
+
+.main-menu aside .your-order p {
+  color: #575858;
+  padding: 1rem;
+}
+
+.main-menu aside .your-order button {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  width: 100%;
+  color: #a7a1a1;
+  cursor: not-allowed;
 }
 
 .restaurants {
@@ -446,6 +503,113 @@ nav .nav-links button .cart-icon {
   height: 25rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.login-form {
+  min-height: 80vh;
+}
+
+.login-form #login-form {
+  width: 40%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10rem;
+}
+
+.login-form #login-form h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.login-form #login-form label {
+  font-size: 1.6rem;
+  padding-top: 1rem;
+}
+
+.login-form #login-form button,
+.login-form #login-form input {
+  width: 100%;
+  padding: 1.2rem 0rem;
+  margin: 1rem 0rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.login-form #login-form #login-btn {
+  background: #00ccbc;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-form #login-form #login-btn:hover {
+  background: #109b8f;
+}
+
+.login-form #login-form #recover-pass-btn {
+  color: #00ccbc;
+  cursor: pointer;
+}
+
+.login-form #login-form #recover-pass-btn:hover {
+  border: 1px solid #d1d1d1;
+}
+
+.login-form #login-form input {
+  border: 1px solid #d1d1d1;
+  -webkit-box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.07);
+  text-indent: 5%;
+}
+
+.login-form #login-form input:focus {
+  color: #4b515d;
+  border: 1px solid #00ccbc;
+  -webkit-box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form #login-form ::-webkit-input-placeholder {
+  color: #afa6a6;
+}
+
+.login-form #login-form :-ms-input-placeholder {
+  color: #afa6a6;
+}
+
+.login-form #login-form ::-ms-input-placeholder {
+  color: #afa6a6;
+}
+
+.login-form #login-form ::placeholder {
+  color: #afa6a6;
+}
+
+.login-form #login-form .register-link {
+  padding: 1rem 0rem;
+}
+
+.login-form #login-form .register-link span {
+  cursor: pointer;
+  color: #00ccbc;
+}
+
+.login-form #login-form .register-link span:hover {
+  font-weight: 500;
 }
 
 footer {

@@ -1,0 +1,72 @@
+.login-form {
+  min-height: 80vh;
+  #login-form {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    justify-content: center;
+    padding: 10rem;
+    h2 {
+      font-size: $header2;
+      font-weight: 600;
+    }
+    label {
+      font-size: $normal;
+      padding-top: 1rem;
+    }
+
+    button,
+    input {
+      width: 100%;
+      padding: 1.2rem 0rem;
+      margin: 1rem 0rem;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+    }
+    #login-btn {
+      background: $main-color-green;
+      color: white;
+      font-size: $normal;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    #login-btn:hover {
+      background: rgb(16, 155, 143);
+    }
+    #recover-pass-btn {
+      color: $main-color-green;
+      cursor: pointer;
+    }
+    #recover-pass-btn:hover {
+      border: 1px solid #d1d1d1;
+    }
+    input {
+      border: 1px solid #d1d1d1;
+      box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.07);
+      text-indent: 5%;
+    }
+    input:focus {
+      color: #4b515d;
+      border: 1px solid $main-color-green;
+      box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01),
+        0px 0px 8px rgba(0, 0, 0, 0.2);
+    }
+    ::placeholder {
+      color: rgb(175, 166, 166);
+    }
+    .register-link{
+        padding: 1rem 0rem;
+        span{
+            cursor: pointer;
+            color: $main-color-green;
+        }
+        span:hover{
+            font-weight: 500;
+        }
+    }
+  }
+}

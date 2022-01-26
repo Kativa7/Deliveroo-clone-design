@@ -47,10 +47,12 @@ nav {
       .menu-icon {
         width: 20%;
       }
-      .cart-icon{
-          width: 25%;
-      }
+      .cart-icon {
+        width: 25%;
+      }   
+    }
+    button:hover {
+      border: 2px solid $main-color-light;
     }
   }
 }
-

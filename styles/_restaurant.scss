@@ -67,8 +67,9 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
   .all-menu {
-    flex: 2;
+    flex: 3;
     .meal-title {
       h1 {
         padding: 2.5rem 0rem;
@@ -112,7 +113,35 @@
       }
     }
   }
-  .your-order {
+  aside {
+    margin-left: 5rem;
+    align-self: flex-start;
     flex: 1;
+    position: sticky;
+    top: 0%;
+    .your-order {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+      margin: 2rem;
+      width: 90%;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 2rem;
+      box-shadow: 1px 1px 2px 1px rgba(117, 117, 117, 0.46);
+      p{
+          color: $grey-color;
+          padding: 1rem;
+      }
+      button{
+          font-size: 2rem;
+          font-weight: 600;
+          padding: 1rem 2rem;
+          width: 100%;
+          color: rgb(167, 161, 161);
+          cursor: not-allowed;
+      }
+    }
   }
 }

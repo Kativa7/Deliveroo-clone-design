@@ -59,16 +59,16 @@
 
     <section class="menu-preview">
       <ul>
-        <li><a href="#">Burgers</a></li>
-        <li><a href="#">Sides</a></li>
-        <li><a href="#">Snacks</a></li>
-        <li><a href="#">Drinks</a></li>
+        <li><a href="#burgers">Burgers</a></li>
+        <li><a href="#sides">Sides</a></li>
+        <li><a href="#snacks">Snacks</a></li>
+        <li><a href="#drinks">Drinks</a></li>
       </ul>
     </section>
 
     <section class="main-menu">
       <div class="all-menu">
-        <div class="item-menu">
+        <div class="item-menu" id="burgers">
           <div class="meal-title">
             <h1>Burgers</h1>
             <p>
@@ -112,11 +112,12 @@
             </div>
           </div>
         </div>
-        <div class="item-menu">
+        <div class="item-menu" id="sides">
           <div class="meal-title">
             <h1>Sides</h1>
             <p>
-              Why not add something extra to your meal. Including our famous gravy.
+              Why not add something extra to your meal. Including our famous
+              gravy.
             </p>
           </div>
           <div class="menu-cards">
@@ -124,7 +125,8 @@
               <div class="card-info">
                 <h3>Regular Fries</h3>
                 <p class="cut-text">
-                    Regular golden French fries. Unsalted. So you can tailor them to your taste.
+                  Regular golden French fries. Unsalted. So you can tailor them
+                  to your taste.
                 </p>
                 <p>£1.99</p>
               </div>
@@ -134,7 +136,7 @@
               <div class="card-info">
                 <h3>Regular Coleslaw</h3>
                 <p class="cut-text">
-                    Freshly prepared with just the right amount of zesty crunch.
+                  Freshly prepared with just the right amount of zesty crunch.
                 </p>
                 <p>£1.99</p>
               </div>
@@ -144,7 +146,7 @@
               <div class="card-info">
                 <h3>Corn Cob</h3>
                 <p class="cut-text">
-                    A golden cob of delicious corn. Sweet and simple.
+                  A golden cob of delicious corn. Sweet and simple.
                 </p>
                 <p class="price">£1.99</p>
               </div>
@@ -152,20 +154,19 @@
             </div>
           </div>
         </div>
-        <div class="item-menu">
+        <div class="item-menu" id="snacks">
           <div class="meal-title">
             <h1>Snacks</h1>
             <p>
-              Small but mighty. Enjoy our snacks on their own or add them to your order.
+              Small but mighty. Enjoy our snacks on their own or add them to
+              your order.
             </p>
           </div>
           <div class="menu-cards">
             <div class="card">
               <div class="card-info">
                 <h3>Hot Wings</h3>
-                <p class="cut-text">
-                  2 Hot Wings. The perfect spicy snack.
-                </p>
+                <p class="cut-text">2 Hot Wings. The perfect spicy snack.</p>
                 <p>£1.29</p>
               </div>
               <img src="../images/kfc-wings.jpg" alt="" />
@@ -173,9 +174,7 @@
             <div class="card">
               <div class="card-info">
                 <h3>Chocolate Chip Cookie</h3>
-                <p class="cut-text">
-                  One classic chocolate chip cookie.
-                </p>
+                <p class="cut-text">One classic chocolate chip cookie.</p>
                 <p>£1.29</p>
               </div>
               <img src="../images/kfc-cookie.jfif" alt="" />
@@ -183,28 +182,25 @@
             <div class="card">
               <div class="card-info">
                 <h3>Mini Fillet</h3>
-                <p class="cut-text">
-                  Our 100% chicken breast Mini Fillet.
-                </p>
+                <p class="cut-text">Our 100% chicken breast Mini Fillet.</p>
                 <p class="price">£1.99</p>
               </div>
               <img src="../images/kfc-minifillet.jpeg" alt="" />
             </div>
           </div>
         </div>
-        <div class="item-menu">
+        <div class="item-menu" id="drinks">
           <div class="meal-title">
             <h1>Drinks</h1>
-            <p>
-              Quench your thirst with our refreshing drinks selection.
-            </p>
+            <p>Quench your thirst with our refreshing drinks selection.</p>
           </div>
           <div class="menu-cards">
             <div class="card">
               <div class="card-info">
                 <h3>Pepsi MAX 1.5 L Bottle</h3>
                 <p class="cut-text">
-                  MAXIMUM TASTE, NO SUGAR. A bold and refreshing fizzy drink. Delivered chilled.
+                  MAXIMUM TASTE, NO SUGAR. A bold and refreshing fizzy drink.
+                  Delivered chilled.
                 </p>
                 <p>£2.99</p>
               </div>
@@ -212,9 +208,10 @@
             </div>
             <div class="card">
               <div class="card-info">
-                <h3>Tropicana Orange 250ml</h3>
+                <h3>Tropicana Orange</h3>
                 <p class="cut-text">
-                  Smooth 100% pure pressed Tropicana orange juice for enjoyment throughout the day.
+                  Smooth 100% pure pressed Tropicana orange juice for enjoyment
+                  throughout the day.
                 </p>
                 <p>£1.89</p>
               </div>
@@ -234,9 +231,31 @@
         </div>
       </div>
 
+      <aside>
       <div class="your-order">
-        <img src="../images/dunkin.jfif" alt="" />
-      </div>
+          <img src="../icons/empty-cart.svg" alt="empty cart" />
+          <p>Your basket is empty</p>
+          <button  type="button" disabled>Go to checkout</button>
+        </div>
+      </aside>
+
     </section>
+
+    <footer>
+      <div class="footer-wrap">
+        <ul>
+          <li>
+            <a href="#"><img src="../icons/instagram 1.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../icons/twitter 1.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../icons/youtube-symbol 1.svg" alt="" /></a>
+          </li>
+        </ul>
+        <p>&copy; 2022 Deliveroo</p>
+      </div>
+    </footer>
   </body>
 </html>
